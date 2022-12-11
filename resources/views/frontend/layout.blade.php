@@ -112,6 +112,8 @@
 
     @yield('checkout')
 
+    @yield('product_list')
+
     <!-- Banner Begin -->
     @yield('banner')
     <!-- Banner End -->

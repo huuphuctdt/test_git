@@ -59,8 +59,8 @@
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="{{ route('home') }}">Home</a></li>
-                        <li><a href="./shop-grid.html">Shop</a></li>
+                        <li class="{{ request()->route()->getName() == 'home' ? 'active':'' }}"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="{{ request()->route()->getName() == 'product.list' ? 'active':'' }}" ><a href="{{ route('product.list') }}">Shop</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="./shop-details.html">Shop Details</a></li>
