@@ -45,5 +45,7 @@ class HomeController extends Controller
         return view('frontend.home')
         ->with('productCategories', $productCategories)
         ->with('products', $products);
+
+        //
     }
 }

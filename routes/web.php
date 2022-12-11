@@ -76,10 +76,4 @@ Route::post('place-order', [CheckoutController::class, 'saveOrder'])->name('plac
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-// Route::get('send-mail', function(){
-//     $order = Order::find(7);
-//     dd($order->products->toArray());
-// });
+Route::get('product-list',[HomeController::class, 'getProductList'])->name('product.list');
